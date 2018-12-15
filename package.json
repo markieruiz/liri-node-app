@@ -18,6 +18,11 @@
   },
   "homepage": "https://github.com/markieruiz/liri-node-app#readme",
   "dependencies": {
-    "axios": "^0.18.0"
+    "axios": "^0.18.0",
+    "dotenv": "^6.2.0",
+    "file-system": "^2.2.2",
+    "moment": "^2.23.0",
+    "node-spotify-api": "^1.0.7",
+    "request": "^2.88.0"
   }
 }
