@@ -56,7 +56,7 @@ function bandsInTown(parameter) {
         var day = dTime.substring(8, 10);
         var dateForm = month + "/" + day + "/" + year;
 
-        logThis("\n------------------------------------\n");
+        logThis("\n_________________________________________\n");
 
         logThis("Date: " + dateForm);
         logThis("Name: " + JS[i].venue.name);
@@ -65,7 +65,7 @@ function bandsInTown(parameter) {
           logThis("Country: " + JS[i].venue.region);
         }
         logThis("Country: " + JS[i].venue.country);
-        logThis("\n----------------------------------------------------------\n");
+        logThis("\n________________________________________________ \n");
       }
     }
   });
@@ -87,12 +87,12 @@ function spotifySong(parameter) {
       return;
     }
     else {
-      logThis("\n--------------------------------------------------\n");
+      logThis("\n_________________________________________\n");
       logThis("Artist: " + data.tracks.items[0].artists[0].name);
       logThis("Song: " + data.tracks.items[0].name);
       logThis("Preview: " + data.tracks.items[3].preview_url);
       logThis("Album: " + data.tracks.items[0].album.name);
-      logThis("\n--------------------------------------------------\n");
+      logThis("\n_________________________________________\n");
     }
   });
 };
@@ -110,7 +110,7 @@ function movieInfo(parameter) {
   request(queryURL, function (err, res, body) {
     var bodyOf = JSON.parse(body);
     if (!err && res.statusCode === 200) {
-      logThis("\n-------------------------------------------\n");
+      logThis("\n_________________________________________\n");
       logThis("Title: " + bodyOf.Title);
       logThis("Release Year: " + bodyOf.Year);
       logThis("IMDB Rating: " + bodyOf.imdbRating);
@@ -119,7 +119,7 @@ function movieInfo(parameter) {
       logThis("Language: " + bodyOf.Language);
       logThis("Plot: " + bodyOf.Plot);
       logThis("Actors: " + bodyOf.Actors);
-      logThis("\n--------------------------------------------\n");
+      logThis("\n_________________________________________\n");
     }
   });
 };
